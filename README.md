@@ -1,8 +1,7 @@
 # Examples
 
-This are the examples of the book [Angular - Programmieren für Einsteiger](https://www.angular-buch.net), called _sebcon24_. 
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.0.
+This are the examples of the book [Angular - Programmieren für Einsteiger](https://www.angular-buch.net). This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.0.
+In some examples you should open your console, there are several tests outputs.
 
 ## Development server
 
