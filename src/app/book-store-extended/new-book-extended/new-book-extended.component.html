@@ -1,0 +1,9 @@
+<div class="new__book--container">
+    <h2>{{ status === STATUS.new ? 'Neues Buch' : 'Buch editieren' }}</h2>
+    
+    <input type="text" placeholder="Titel" [(ngModel)]="book.title" [ngClass]="{error: !book?.title}">
+    <input type="text" placeholder="Beschreibung" [(ngModel)]="book.description" [ngClass]="{error: !book?.description}">
+    <input type="number" placeholder="Preis" [(ngModel)]="book.price" [ngClass]="{error: book?.price <= 0}">
+    <button (click)="clickSaveButton()" [disabled]="!isSavable()">Speichern</button>
+    <button (click)="setBookEmpty()" [disabled]="!isSavable()">Zurücksetzen</button>
+</div>

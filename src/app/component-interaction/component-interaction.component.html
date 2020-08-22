@@ -1,0 +1,14 @@
+<p>Hier gibt es zwei Produkte, die {{ count }} Mal verkauft wurden.</p>
+<app-item 
+    [product]="products[0]" 
+    [isSold]="isSold()"
+    (buyProduct)="onBuyProduct()"
+    >
+</app-item>
+
+<app-item 
+    [product]="products[1]" 
+    [isSold]="isSold()"
+    (buyProduct)="onBuyProduct()"
+    >
+</app-item>

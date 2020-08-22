@@ -1,0 +1,20 @@
+.new__book--container {
+    padding: 20px;
+    background-color: #F0F0F0;
+}
+
+.new__book--container input {
+    padding: 5px 0px;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.new__book--container button {
+    padding: 6px;
+    width: calc(100% + 4px);
+    margin: 10px 0px;
+}
+
+.new__book--container .msg--info p {
+    margin: 2px 0px;
+}

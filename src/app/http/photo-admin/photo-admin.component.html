@@ -1,0 +1,24 @@
+<div class="container">
+    <h1>Photos</h1>
+    <div *ngFor="let photo of (photos$ | async) | slice:0:5" class="container_photo">
+        <div class="row">
+            <div class="col-3">
+                <img [src]="photo?.thumbnailUrl" [title]="photo?.title" [alt]="photo?.title" id="title">
+            </div>
+            <div class="col-9">
+                <input [value]="photo.title" type="text">
+                <button (click)="onClickUpdate(photo)" class="btn btn-secondary">Aktualisieren</button>
+                <button (click)="onClickCreate(photo)" class="btn btn-light">Neues Photo</button>
+                <hr>
+                <button (click)="onClickDelete(photo)" class="btn btn-danger">Löschen</button>
+            </div>
+        </div>
+    </div>
+    <div class="row" *ngIf="response">
+        <div class="col">
+            <h3>Response</h3>
+            <p>{{response | json}}</p>
+        </div>
+    </div>
+</div>
+

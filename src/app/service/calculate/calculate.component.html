@@ -1,0 +1,13 @@
+<div>
+<input [(ngModel)]="value1" type="number">
+<select [(ngModel)]="symbol">
+	<option value="sub">Subtrahieren</option>
+	<option value="add">Addieren</option>
+</select>
+<input [(ngModel)]="value2" type="number">
+<button (click)="calculate()">Rechne</button>
+</div>
+
+<p>
+	Ergebnis: {{ result }}
+</p>

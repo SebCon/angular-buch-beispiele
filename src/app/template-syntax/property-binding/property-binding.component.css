@@ -1,0 +1,9 @@
+.image__gallery {
+    margin: 20px 50px;
+}
+
+.image__gallery img {
+    height: 250px;
+    width: auto;
+    display: block;
+}

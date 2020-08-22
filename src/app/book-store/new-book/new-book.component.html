@@ -1,0 +1,15 @@
+<div class="new__book--container">
+    <h2>Neues Buch</h2>
+    <div class="msg--info">
+        <p>Bitte füllen Sie folgende Felder aus:</p>
+        <p [style.color]="book?.title ? 'green' : 'red'">Titel</p>
+        <p [style.color]="book?.description ? 'green' : 'red'">Beschreibung</p>
+        <p [style.color]="book?.price > 0 ? 'green' : 'red'">Preis</p>
+    </div>
+    
+    <input type="text" placeholder="Titel" [(ngModel)]="book.title" [disabled]="!edit">
+    <input type="text" placeholder="Beschreibung" [(ngModel)]="book.description" [disabled]="!edit">
+    <input type="number" placeholder="Preis" [(ngModel)]="book.price" [disabled]="!edit">
+    <button (click)="clickSaveButton()" [disabled]="!isSavable()">Speichern</button>
+    <button (click)="setBookEmpty()" [disabled]="!isSavable()">Zurücksetzen</button>
+</div>

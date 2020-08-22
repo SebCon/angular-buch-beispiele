@@ -1,0 +1,39 @@
+<div class="main">
+    <h1>Beispiele</h1>
+
+    <div class="links">
+        <div class="inner">
+            <h2>Auswahl</h2>
+            <ul>
+                <li *ngFor="let route of routes; let index=index">
+                    <p>#{{index + 1}} 
+                        <a *ngIf="route.component" [routerLink]="[route.path]">{{ route.title }}</a>
+                        <span *ngIf="!route.component">{{ route.title }}</span>
+                    </p>
+                    <ul *ngIf="route.children">
+                        <li *ngFor="let subRoute of route.children">
+                            <a *ngIf="subRoute.component; else alternativText" [routerLink]="[route.path, subRoute.path]">{{ subRoute.title || subRoute.path }}</a>
+                            <ng-template #alternativText>
+                                <span>{{ subRoute.title }}</span>
+                            </ng-template>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="inner">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+
+    <div class="lifecycle__hooks">
+        <app-lifecycle-hooks [a]="inputValue" [b]="inputValue" *ngIf="showComponent"></app-lifecycle-hooks>
+
+        <input [(ngModel)]="inputValue">
+
+        <button (click)="showComponent = !showComponent">Show / Hide Component</button>
+    </div>
+</div>

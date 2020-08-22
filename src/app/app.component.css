@@ -1,0 +1,19 @@
+.main {
+    margin: 5% 15%;
+}
+
+.main .links {
+    margin: 20px 0px;
+    background-color: #FFB533;
+    border: 1px solid #e8e8e8;
+}
+
+.main .content {
+    min-height: 100px;
+    margin: 20px 0px;
+    border: 1px solid #C6C5C3;
+}
+
+.inner {
+    padding: 10px;
+}

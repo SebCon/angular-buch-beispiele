@@ -1,0 +1,13 @@
+<div>
+    <input #inputRef 
+        [value]="inputValue" 
+        placeholder="nur ein test" 
+        (keydown)="inputRef.type = 'checkbox'"
+        >
+</div>
+<p><span>placeholder</span> {{ inputRef.placeholder }}</p>
+<p><span>value</span>   {{ inputRef.value }}</p>
+<p><span>type</span> {{ inputRef.type }}</p>
+<p><span>disabled</span> {{ inputRef.disabled }}</p>
+<p><span>offsetHeight</span> {{ inputRef.offsetHeight }}</p>
+<p><span>offsetHeight</span> {{ inputRef.offsetWidth }}</p>

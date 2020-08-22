@@ -1,0 +1,10 @@
+<div class="book__list--container" appMouseHover>
+    <span class="button--edit" (click)="clickEditButton()">Edit</span>
+    <p class="title">Titel "{{ book?.title }}"</p>
+    <p class="description">Beschreibung: {{ book?.description }}</p>
+    <p class="price">EUR <span 
+        [style.backgroundColor]="book?.price < 10 ? 'red' : 'white'"
+        [style.color]="book?.price < 10 ? 'white' : 'black'"
+        >{{ book?.price }}</span>
+    </p>
+</div>

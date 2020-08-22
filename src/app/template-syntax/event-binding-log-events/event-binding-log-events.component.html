@@ -1,0 +1,15 @@
+<div 
+        (change)="logEvent($event, 'change')"
+        (keydown)="logEvent($event, 'keydown')"
+        (keyup)="logEvent($event, 'keyup')"
+        (mouseenter)="logEvent($event, 'mouseenter')"
+        (mousedown)="logEvent($event, 'mousedown')"
+        (mouseup)="logEvent($event, 'mouseup')"
+        (click)="logEvent($event, 'click')"
+        (dblclick)="logEvent($event, 'dblclick')"
+>
+    <p>Ich bin ein Element, klick mich</p>
+    <input type="text" placeholder="für die Tasteneingaben">
+</div>
+
+<button>ein Button zum Klicken für den Change</button>

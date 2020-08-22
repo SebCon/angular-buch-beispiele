@@ -1,0 +1,6 @@
+<div class="item__container">
+    <p class="title">Title: {{product?.title}}</p>
+    <p class="description">Beschreibung: {{product?.description}}</p>
+    <p class="status">{{isSold ? 'Ausverkauft' : 'Noch vorhanden'}}</p>
+    <button (click)="clickButton()" [disabled]="isSold">Kaufen</button>
+</div>

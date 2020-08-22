@@ -1,0 +1,9 @@
+<button (click)="addItem('hallo');">Ein Item hinzufügen</button>
+
+<div *ngIf="items.length > 0; else alternativText">
+    <p *ngFor="let item of items; let i = index">{{ i + 1 }} - {{ item }}</p>
+</div>
+
+<ng-template #alternativText>
+	<p>Keine Einträge vorhanden</p>
+</ng-template>

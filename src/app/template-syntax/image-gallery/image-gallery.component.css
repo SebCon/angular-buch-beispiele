@@ -1,0 +1,20 @@
+.image__gallery {
+    margin: 20px 50px;
+}
+
+.image__gallery img {
+    height: 250px;
+    width: auto;
+    display: block;
+}
+
+.image__gallery button {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+}
+
+.sepia {
+    -webkit-filter: sepia(100%); /* Safari 6.0 - 9.0 */
+    filter: sepia(100%);
+}

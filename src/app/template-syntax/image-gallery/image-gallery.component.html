@@ -1,0 +1,17 @@
+<div class="image__gallery">
+    <img 
+        [src]="currentImage"
+        [title]="getCurrentImageTitle()"
+        [alt]="getCurrentImageTitle()" 
+        [class.sepia]="isSepia"
+        [style.width]="isExpand ? '100%' : 'auto
+        '"
+        >
+    <button (click)="setNextImage()">Next Image</button>
+    <button (click)="isSepia = !isSepia">
+        Sepia / Reset
+    </button>
+    <button (click)="isExpand = !isExpand">
+        Expand 100% / Reset
+    </button>
+</div>

@@ -1,0 +1,29 @@
+<select [(ngModel)]="displayElement">
+    <option value="text">Text</option>
+    <option value="button">Button</option>
+    <option value="table">Table</option>
+    <option value="input">Input</option>
+    <option value="irgendwas">Irgendwas</option>
+</select>
+
+<div [ngSwitch]="displayElement">
+
+	<p *ngSwitchCase="'text'">Ich bin ein Text</p>
+                    
+	<button *ngSwitchCase="'button'">Click me!</button>
+                       
+	<table *ngSwitchCase="'table'">
+		<tr>
+      		<td>Irgend ein Wert</td>
+      		<td>Noch ein Wert</td>
+    	</tr>
+    	<tr>
+      		<td>Irgend ein Wert</td>
+      		<td>Noch ein Wert</td>
+    	</tr>
+	</table >
+                      
+	<input *ngSwitchCase="'input'" type="text">
+                        
+	<p *ngSwitchDefault>Wenn du mich siehst, ist irgendetwas schiefgegangen</p>                      
+</div>

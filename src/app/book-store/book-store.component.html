@@ -1,0 +1,4 @@
+<div class="book__store--container">
+    <app-new-book [book]="getBookClone()" [edit]="edit" (saveBook)="onSaveBook($event)"></app-new-book>
+    <app-book-list [book]="bookData" (editBook)="onEditBook($event)"></app-book-list>
+</div>

@@ -1,0 +1,9 @@
+<input type="text" [(ngModel)]="echoValue">
+<p>{{ echoValue | myPipe:5 }}</p>
+
+
+<p>{{ '2010-05-07' | date:'dd. EEEE yyyy' }}</p>
+<p>{{ 0.99 | currency:'EUR':false:'2.2' }}</p>
+<p>{{ 'Ein Wort' | uppercase }}</p>
+<p>{{ 0.55 | percent:'2.0' }}</p>
+<p>{{ 11234.99 | number }}</p>

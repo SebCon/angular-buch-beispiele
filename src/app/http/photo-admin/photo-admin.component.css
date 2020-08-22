@@ -1,0 +1,13 @@
+.container_photo {
+    min-height: 250px;
+    margin: 30px 0px;
+}
+
+button {
+    margin: 10px 0px;
+}
+
+input, button {
+    display: block;
+    width: 100%;
+}

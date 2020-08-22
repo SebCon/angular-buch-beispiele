@@ -1,0 +1,40 @@
+<div class="container">
+    <h1>Flugbuchung</h1>
+    <form [formGroup]="flightBooking">
+      <div class="form-group">
+        <label for="name">Abflughafen</label>
+        <input type="text" class="form-control" id="startAirport" formControlName="startAirport">
+      </div>
+
+      <div class="form-group">
+        <label for="destAirport">Zielflughafen</label>
+        <input type="text" class="form-control" id="destAirport" formControlName="destAirport">
+      </div>
+
+      <div class="form-group">
+        <label for="startDate">Hinflug-Datum</label>
+        <input type="date" class="form-control" id="startDate" formControlName="startDate">
+      </div>
+
+      <div class="form-group">
+        <label for="endDate">Rückreise-Datum</label>
+        <input type="date" class="form-control" id="endDate" formControlName="endDate">
+      </div>
+
+
+      <div class="form-group">
+        <label for="personCount">Personenanzahl</label>
+        <select class="form-control" id="personCount" formControlName="personCount">
+            <option *ngFor="let value of [1,2,3,4,5,6,7,8,9,10]" [value]="value">{{ value }}</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+          <p>Preis insgesamt: {{ total | currency:'EUR' }}</p>
+      </div>
+
+      <button type="submit" class="btn btn-success" [disabled]="!flightBooking.valid">Buchen</button>
+    </form>
+</div>
+
+

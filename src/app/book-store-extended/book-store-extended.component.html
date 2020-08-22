@@ -1,0 +1,5 @@
+<div class="book__store--container">
+    <app-new-book-extended [book]="book" [status]="status" (saveBook)="onSaveBook($event)" *ngIf="showBookInput()"></app-new-book-extended>
+    <button (click)="newBook()" *ngIf="!showBookInput()">Neues Buch anlegen</button>
+    <app-book-list-extended [book]="book" (editBook)="onEditBook($event)" *ngFor="let book of books"></app-book-list-extended>
+</div>

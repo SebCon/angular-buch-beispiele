@@ -1,0 +1,13 @@
+.container {
+    margin: 20px 0px;
+    padding: 20px;
+    background-color: #F8F8F8;
+    border: 1p solid #E8E8E8;
+    min-height: 150px;
+    position: relative;
+}
+
+input, button {
+    min-width: 250px;
+    padding: 5px 2px;
+}

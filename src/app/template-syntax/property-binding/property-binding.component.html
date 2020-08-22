@@ -1,0 +1,5 @@
+<div class="image__gallery">
+    <img [src]="currentImage" [title]="getCurrentImageTitle()" [alt]="getCurrentImageTitle()">
+    <button [disabled]="isDisabled">Aktualisieren</button>
+    <button bind-disabled="isDisabled">Aktualisieren</button>
+</div>

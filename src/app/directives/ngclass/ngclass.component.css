@@ -1,0 +1,23 @@
+p {
+    padding: 10px;
+}
+
+.bgcolor--red {
+    background-color: red;
+}
+
+.bgcolor--green {
+    background-color: green;
+}
+
+.bgcolor--blue {
+    background-color: blue;
+}
+
+.bgcolor--yellow {
+    background-color: yellow;
+}
+
+.bgcolor--white {
+    background-color: white;
+}

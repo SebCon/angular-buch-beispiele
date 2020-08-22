@@ -1,0 +1,11 @@
+<select [(ngModel)]="color">
+    <option value="red">Rot</option>
+    <option value="green">Grün</option>
+    <option value="blue">Blau</option>
+    <option value="yellow">Gelb</option>
+    <option value="white">Weiß</option>
+</select>
+
+<p [ngClass]="'bgcolor--' + color">Das ist ein Test mit Farbe.</p>
+
+
